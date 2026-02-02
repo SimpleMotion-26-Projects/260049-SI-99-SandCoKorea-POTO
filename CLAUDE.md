@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-**{{PROJECT_ID}}** | {{CLIENT_NAME}} | {{PROJECT_TITLE}}
+**260049-SI** | SandCo Korea | POTO
 
-{{PROJECT_DESCRIPTION}}
+New project - update with project scope and objectives.
 
 ## Commands
 

@@ -1,13 +1,13 @@
-# Project Metadata for {{PROJECT_TITLE}}
+# Project Metadata for POTO
 # Version: 1
 
 [project]
-id = "{{PROJECT_ID}}"
-title = "{{PROJECT_TITLE}}"
+id = "260049-SI"
+title = "POTO"
 
 [client]
-name = "{{CLIENT_NAME}}"
-short_name = "{{CLIENT_SHORT_NAME}}"
+name = "SandCo Korea"
+short_name = "SandCoKorea"
 address_line1 = ""
 address_line2 = ""
 
