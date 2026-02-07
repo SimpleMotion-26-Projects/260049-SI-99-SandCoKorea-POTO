@@ -1,0 +1,231 @@
+/* SimpleMotion Invoice Stylesheet - 260049-SE POTO Korea 2026 */
+
+/* ==========================================================================
+   CSS Custom Properties
+   ========================================================================== */
+
+:root {
+  --font-stack: Calibri, 'Calibri Light', sans-serif;
+  --color-border: #ccc;
+  --color-header-bg: #f5f5f5;
+}
+
+/* ==========================================================================
+   Page Setup
+   ========================================================================== */
+
+@page {
+  size: A4;
+  margin: 10mm 15mm;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+body {
+  font-family: var(--font-stack);
+  font-size: 7pt;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ==========================================================================
+   Page One Layout
+   ========================================================================== */
+
+.page-one {
+  display: flex;
+  flex-direction: column;
+  min-height: 277mm; /* A4 (297mm) minus top/bottom margins (10mm each) */
+}
+
+.page-one-header {
+  text-align: center;
+  font-size: 7pt;
+  flex-shrink: 0;
+}
+
+.page-one-header img {
+  width: 144mm;
+}
+
+.page-one-content {
+  flex-grow: 1;
+}
+
+.page-one-footer {
+  text-align: center;
+  font-size: 7pt;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   Document Type & Project Title
+   ========================================================================== */
+
+#document-type,
+#project-title {
+  text-align: center;
+}
+
+#document-type p {
+  margin: 0;
+  padding: 0;
+}
+
+#project-title p {
+  font-size: 10pt;
+  padding: 8px 0;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Client Details & Contact Sections
+   ========================================================================== */
+
+#client-details,
+#contact {
+  font-size: 7pt;
+  padding: 0 5px;
+  margin: 0;
+}
+
+#client-details table,
+#contact table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#client-details td {
+  padding: 6px 0;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+#contact td {
+  padding: 6px 0;
+  vertical-align: middle;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Client Details - column widths */
+#client-details .client-name {
+  width: 60%;
+  text-align: left;
+}
+
+#client-details .label {
+  width: 20%;
+  text-align: right;
+}
+
+#client-details .value {
+  width: 20%;
+  text-align: right;
+}
+
+/* Client Details - 1px underline */
+#client-details tr {
+  border-bottom: 1px solid #000;
+}
+
+/* Contact - 2px underline */
+#contact tr {
+  border-bottom: 2px solid #000;
+}
+
+/* ==========================================================================
+   Line Items Table
+   ========================================================================== */
+
+.line-items {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 7pt;
+}
+
+.line-items thead {
+  background-color: var(--color-header-bg);
+}
+
+.line-items th {
+  padding: 8px 10px;
+  text-align: left;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  font-weight: bold;
+}
+
+.line-items th.unit-cost,
+.line-items th.amount {
+  text-align: right;
+}
+
+.line-items td {
+  padding: 8px 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #eee;
+}
+
+.line-items td.units {
+  width: 50px;
+  text-align: center;
+}
+
+.line-items td.description {
+  width: auto;
+}
+
+.line-items td.unit-cost,
+.line-items td.amount {
+  width: 100px;
+  text-align: right;
+}
+
+/* ==========================================================================
+   Totals Section
+   ========================================================================== */
+
+.totals-section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.totals-table {
+  width: 300px;
+  margin-left: auto;
+  border-collapse: collapse;
+  font-size: 7pt;
+}
+
+.totals-table td {
+  padding: 5px 10px;
+}
+
+.totals-table td:first-child {
+  text-align: right;
+}
+
+.totals-table td:last-child {
+  text-align: right;
+  width: 100px;
+}
+
+.totals-table tr.total-row td {
+  font-weight: bold;
+  border-top: 1px solid var(--color-border);
+  padding-top: 8px;
+}
+
+.totals-table tr.amount-due td {
+  font-weight: bold;
+  font-size: 7pt;
+  border-top: 2px solid #333;
+  padding-top: 10px;
+}
