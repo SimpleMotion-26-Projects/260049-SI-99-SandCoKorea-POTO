@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 | Version | Hash | Date | Author | Message |
 |---------|------|------|--------|
+| v0.0.0.6 | b515e4b | 2026-02-26 04:39 UTC | Greg Gowans | Update submodules: .claude to v0.0.0.189 |
 | v0.0.0.5 | 4700824 | 2026-02-07 11:44 UTC | Greg Gowans | Add POTO Korea invoice documents |
 | v0.0.0.4 | 9981c27 | 2026-02-05 17:23 UTC | Greg | Update project files |
 
